@@ -18,8 +18,8 @@ class OddEvenTest {
 
 	@Test
 	void test() {
-		Comparator<Integer> OddEvenComparator = new OddEvenComparator();
-		Arrays.sort(actual, OddEvenComparator);
+		Comparator<Integer> oddEvenComparator = new OddEvenComparator();
+		Arrays.sort(actual, oddEvenComparator);
 		Integer[] expected = new Integer[] { 2, 4, 6, 8, 9, 7, 5, 3, 3, 1 };
 		assertArrayEquals(expected, actual);
 	}
